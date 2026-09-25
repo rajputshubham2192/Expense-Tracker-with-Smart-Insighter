@@ -6,7 +6,6 @@ import {
   PieChart, 
   Sparkles, 
   Tags, 
-  ShieldCheck,
   TrendingUp,
   Users
 } from 'lucide-react';
@@ -117,23 +116,6 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
           );
         })}
       </nav>
-
-      {/* Footer Info */}
-      <div style={{
-        padding: '1.25rem',
-        margin: '1rem',
-        borderRadius: 'var(--radius-md)',
-        background: 'rgba(255, 255, 255, 0.03)',
-        border: '1px solid var(--border-color)',
-        fontSize: '0.75rem',
-        color: 'var(--text-muted)'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#10b981', fontWeight: 600, marginBottom: '0.3rem' }}>
-          <ShieldCheck size={14} />
-          <span>Encrypted JWT & DB</span>
-        </div>
-        <span>AI/ML Financial Intelligence & Analytics System.</span>
-      </div>
     </aside>
   );
 };
